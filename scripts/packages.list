@@ -1,6 +1,7 @@
 git
 unzip
 curl
+stow
 dotnet-sdk-8.0
 tmux
 zsh
