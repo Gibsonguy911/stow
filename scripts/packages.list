@@ -1,0 +1,10 @@
+git
+ninja-build
+gettext
+cmake
+unzip
+curl
+build-essential
+dotnet-sdk-8.0
+tmux
+zsh
