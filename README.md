@@ -14,6 +14,9 @@ This will:
 3. Run the Oh My Zsh and Oh My Posh install scripts listed on their Github
 4. Clone the latest v10 version of Neovim, make, and install
 
+### Tmux dependencies
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 ### Neovim dependencies
 1. fzf
 2. nvm
