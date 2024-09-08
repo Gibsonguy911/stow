@@ -1,0 +1,13 @@
+[/]
+default='510e0682-259f-4eee-82b3-9184d29cb620'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '510e0682-259f-4eee-82b3-9184d29cb620']
+
+[:510e0682-259f-4eee-82b3-9184d29cb620]
+background-color='rgb(26,27,38)'
+font='Monocraft 12'
+foreground-color='rgb(169,177,214)'
+palette=['rgb(26,27,38)', 'rgb(247,118,142)', 'rgb(158,206,106)', 'rgb(224,175,104)', 'rgb(122,162,247)', 'rgb(187,154,247)', 'rgb(125,207,255)', 'rgb(154,165,206)', 'rgb(65,72,104)', 'rgb(247,118,142)', 'rgb(158,206,106)', 'rgb(224,175,104)', 'rgb(122,162,247)', 'rgb(187,154,247)', 'rgb(125,207,255)', 'rgb(192,202,245)']
+use-system-font=false
+use-theme-colors=false
+use-transparent-background=true
+visible-name='tokyonight'

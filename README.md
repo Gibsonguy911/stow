@@ -19,3 +19,6 @@ This will:
 2. nvm
 3. node
 4. dotnet
+
+## Terminal Theme
+dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
