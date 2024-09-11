@@ -4,6 +4,8 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.dotnet:$PATH
+export DOTNET_ROOT=$HOME/.dotnet
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -106,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias connect="ssh sully@192.168.50.237 -p 2222 -t tmux attach-session"
 
 # Autocomplete config
 bindkey '^p' history-search-backward
