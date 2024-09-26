@@ -19,9 +19,14 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### Neovim dependencies
 1. fzf
-2. nvm
-3. node
-4. dotnet
+2. fd-find
+3. nvm
+4. node
+5. dotnet
+
+### Npm dependencies
+1. prettierd
+2. neovim
 
 ## Terminal Theme
 dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
