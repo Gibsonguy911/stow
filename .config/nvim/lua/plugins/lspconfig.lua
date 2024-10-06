@@ -42,16 +42,16 @@ return {
 				local dir = vim.fn.fnamemodify(current, ":h")
 				local project_dir = vim.fn.getcwd()
 				local csproj_dir = nil
+				local max_tries = 3
 
-				while dir ~= project_dir do
-					local files = vim.fn.systemlist(
-						string.format("rg --type-add csproj:*.csproj --files --type csproj --max-depth 1 %s", dir)
-					)
+				while dir ~= project_dir or max_tries == 0 do
+					local files = vim.fn.systemlist(string.format("find %s -maxdepth 1 -type f -name '*.csproj'", dir))
 					if #files > 0 then
 						csproj_dir = dir
 						break
 					end
 					dir = vim.fn.fnamemodify(dir, ":h")
+					max_tries = max_tries - 1
 				end
 
 				if csproj_dir == nil then
@@ -59,9 +59,13 @@ return {
 					return
 				end
 
+				print("csproj dir", csproj_dir)
 				local n = vim.fn.fnamemodify(csproj_dir, ":t") .. current:sub(#csproj_dir + 1)
+				print(1, n)
 				n = vim.fn.fnamemodify(n, ":h")
+				print(2, n)
 				n = n:gsub("[/\\]", ".")
+				print(3, n)
 
 				local className = vim.fn.fnamemodify(vim.fn.expand("%:t"), ":r")
 				local class = ""

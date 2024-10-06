@@ -3,7 +3,7 @@ return {
 	dependencies = {
 		"Tastyep/structlog.nvim",
 	},
-	--ft = { 'cs' },
+	ft = { "cs" },
 	opts = {
 		testing = 1234,
 		lsp = {
