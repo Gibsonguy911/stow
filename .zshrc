@@ -5,6 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.dotnet:$PATH
+export PATH=$HOME/.dotnet/tools:$PATH
 export DOTNET_ROOT=$HOME/.dotnet
 
 # Set name of the theme to load --- if set to "random", it will
